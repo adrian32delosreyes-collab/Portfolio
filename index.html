@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adrian Delos Reyes — Portfolio</title>
+
+  <!-- Google Fonts (same families you used) -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800&family=Poppins:wght@300;400;600&family=Shrikhand&display=swap" rel="stylesheet">
+  <!-- Footer fb-ig icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/aboutme.css">
+  <link rel="stylesheet" href="assets/css/homepage.css">
+  <link rel="stylesheet" href="assets/css/myprojects.css">
+  <link rel="stylesheet" href="assets/css/education.css">
+  <link rel="stylesheet" href="assets/css/myphilosophy.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="site-navbar" class="navbar navbar-show">
+    <div class="nav-links">
+      <a href="index.html" class="nav-item"> Portfolio </a>
+      <a href="book-a-call.html" class="nav-item"> Book A Call</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="hero-name">Adrian Delos Reyes</div>
+      <div class="hero-subtext">Portfolio</div>
+
+      <div class="hero-buttons">
+        <button id="hero-about" class="hero-btn primary-btn">Learn More</button>
+        <button id="hero-view-work" class="hero-btn secondary-btn">View Works</button>
+        <!-- <button class="hero-btn tertiary-btn" onclick="window.location.href='book-a-call.html'"> Book a Call</button> -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ABOUT ME -->
+  <section id="about-section" class="about-section">
+  <div class="about-container">
+
+    <!-- LEFT: PROFILE PHOTO -->
+    <div class="about-photo-wrapper">
+      <img
+        src="https://via.placeholder.com/350"
+        alt="Adrian Delos Reyes"
+        class="about-photo"
+      />
+    </div>
+
+    <!-- RIGHT: TEXT CONTENT -->
+    <div class="about-text">
+      <h2 class="about-title">About Me</h2>
+
+      <p class="about-intro">
+        I'm Adrian Delos Reyes, a multi-talented creative and technical
+        freelancer based in the Philippines. I specialize in crafting branding materials,
+        social media graphics, and promotional content that strengthen visual communication
+        and elevate marketing impact.
+      </p>
+
+      <p class="about-body">
+        My approach combines clean design, thoughtful storytelling, and a focus on clarity
+        — ensuring every piece not only looks great, but also delivers a meaningful and
+        memorable message. I aim to help brands communicate with intention, build trust,
+        and stand out visually.
+      </p>
+
+      <div class="about-details highlight-box">
+        <p>Email: adrian32delosreyes@gmail.com</p>
+        <p>Location: Philippines (Remote-friendly)</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- PROJECTS (JS will populate filter buttons + grid) -->
+    <div id="projects-section"></div>
+
+    <!-- EDUCATION -->
+    <section class="education-section" id="education">
+      <h2 class="education-title">What I Have Studied So Far</h2>
+      <div class="timeline-container">
+        <div id="timeline-line" class="timeline-line" style="height:10%;"></div>
+        <div class="timeline-items" id="timeline-items">
+          <!-- timeline items will be inlined below (static) -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Bachelor of Science in Information Technology</h3>
+              <span>2018 - 2024</span>
+              <p>Cebu Institute of Technology - University</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Secondary Education</h3>
+              <span>2013 - 2018</span>
+              <p>Our Lady of the Pillar Academy</p>
+            </div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Primary Education</h3>
+              <span>2008 - 2013</span>
+              <p>Sabang Elementary School</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy-section">
+      <div class="philosophy-content">
+        <div class="philosophy-text-block">
+          <h2 class="philosophy-title">My Philosophy</h2>
+          <p class="philosophy-text">
+            Creativity, to me, is not just about visuals — it’s about emotion,
+            connection, and impact. I believe every frame, design, and story
+            should serve a purpose: to inspire, to move, and to resonate with
+            people. My approach combines technical skill with storytelling to
+            create meaningful experiences that leave a lasting impression.
+          </p>
+        </div>
+        <img src="https://via.placeholder.com/320" alt="Placeholder" class="philosophy-photo" />
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+
+      <h2 class="footer-heading">
+        <a href="book-a-call.html" class="footer-link work-with-me">Work with Me</a>
+      </h2>
+
+      <p class="footer-contact">adrian32delosreyes@gmail.com | +63 960 297 6354</p>
+      <button class="support-btn">Support My Work</button>
+      
+      <div class="social-icons">
+        <a href="https://www.facebook.com/03dreezy/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/03dreezy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p class="footer-bottom">© 2025 Adrian Delos Reyes. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

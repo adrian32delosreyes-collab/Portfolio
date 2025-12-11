@@ -1,0 +1,51 @@
+:root {
+  --font-heading: 'Shrikhand', cursive;
+  --font-subheading: 'League Spartan', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+
+  --brand-dark: #423b20;
+  --brand-bg: #efede7;
+  --brand-accent: #e4a740;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: var(--brand-bg);
+  color: var(--brand-dark);
+}
+
+h1,h2,h3 {
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  color: var(--brand-dark);
+}
+
+h4,h5,h6 {
+  font-family: var(--font-subheading);
+  color: var(--brand-dark);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 4rem); }
+h2,h3 { font-size: clamp(1.5rem, 3vw, 2.5rem); }
+
+p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--brand-dark);
+}
+
+a {
+  color: var(--brand-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover { color: var(--brand-accent); }
+
+/* small utility */
+.hidden { display: none !important; }
+
+html {
+  scroll-behavior: smooth;
+}

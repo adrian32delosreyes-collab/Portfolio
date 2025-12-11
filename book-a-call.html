@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book a Call — Adrian Delos Reyes</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800&family=Poppins:wght@300;400;600&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/bookpage.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+</head>
+<body>
+
+  <nav id="site-navbar" class="navbar navbar-show">
+    <div class="nav-links">
+      <a href="index.html" class="nav-item"> Portfolio </a>
+      <a href="book-a-call.html" class="nav-item"> Book A Call</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="bookpage-container">
+      <h1 class="bookpage-title">Book a Call</h1>
+      <div class="calendar-wrapper">
+        <iframe src="https://calendar.app.google/DZ7S5sr8bmx5aWWN8"
+                title="Booking Calendar"
+                class="calendar-iframe"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+
+      <h2 class="footer-heading">
+        <a href="book-a-call.html" class="footer-link work-with-me">Work with Me</a>
+      </h2>
+
+      <p class="footer-contact">adrian32delosreyes@gmail.com | +63 960 297 6354</p>
+      <button class="support-btn">Support My Work</button>
+      
+      <div class="social-icons">
+        <a href="https://www.facebook.com/03dreezy/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/03dreezy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p class="footer-bottom">© 2025 Adrian Delos Reyes. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/navbar.js"></script>
+  <script>
+    // small script to animate title like in React CSS
+    document.addEventListener('DOMContentLoaded', () => {
+      const t = document.querySelector('.bookpage-title');
+      if (t) t.style.opacity = '1';
+    });
+  </script>
+</body>
+</html>
