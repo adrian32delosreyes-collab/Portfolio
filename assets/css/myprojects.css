@@ -2,14 +2,16 @@
   background-color: #efede7;
   padding: 50px 10%;
   color: #423b20;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .section-title {
-  text-align: center;
-  width: 100%;
   font-family: var(--font-heading);
   font-size: clamp(2rem, 3vw, 3rem);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--brand-dark);
 }
 
 .project-grid {
