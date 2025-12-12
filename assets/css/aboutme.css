@@ -14,7 +14,7 @@
   gap: 50px;
   max-width: 1200px;
   width: 100%;
-  padding: 100px 250px;
+  padding: 10px 100px;
 }
 
 .aboutme-text-block { 
@@ -33,7 +33,7 @@
 .aboutme-body {
   font-family: var(--font-body);
   font-size: clamp(0.9rem, 1vw, 1rem);
-  line-height: 1.5;
+  line-height: 1.2;
   max-width: 600px;
   color: var(--brand-dark);
 }
@@ -57,11 +57,12 @@
 
 .aboutme-photo {
   flex-shrink: 0;
+  padding: 100px 100px;
   width: clamp(200px, 25vw, 320px);
   height: clamp(200px, 25vw, 320px);       
   object-fit: cover;
   border-radius: 50%;      
-  box-shadow: 0 8px 24px rgba(66, 59, 32, 0.15);
+
 }
 
 /* Responsive for medium screens */
@@ -77,7 +78,7 @@
     width: 100%;
   }
   .aboutme-photo { 
-    margin-bottom: 2rem; 
+    margin-bottom: -5rem; 
     order: 1; /* Photo on top */
     width: clamp(180px, 30vw, 260px);
     height: clamp(180px, 30vw, 260px);    
