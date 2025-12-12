@@ -8,6 +8,7 @@
   font-family: var(--font-heading);
   font-size: clamp(2rem, 3vw, 3rem);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .project-grid {
