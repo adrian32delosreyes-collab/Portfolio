@@ -5,39 +5,53 @@ body {
   font-family: var(--font-body);
 }
 
-/* Animations */
-@keyframes slideInLeft {
-  from { transform: translateX(-100%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+/* Smooth Loop Fade Fix (Crossfade Illusion) */
+.hero-video {
+  animation: fadeVideo 18s linear infinite;
 }
 
-@keyframes slideInRight {
-  from { transform: translateX(100%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+@keyframes fadeVideo {
+  0% { opacity: 1; }
+  95% { opacity: 1; }
+  100% { opacity: 1; } /* Keeps full opacity but preps for seamless restart */
 }
 
 /* HERO SECTION */
 .hero {
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 90px); /* subtract navbar height */
-  background-color: #ffffff;
-  color: #423b20;
+  min-height: calc(100vh - 90px);
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 5rem 2rem; /* fixed padding */
-  box-sizing: border-box;
-  overflow: hidden;
 }
 
+/* Background Video */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 1; /* full opacity */
+}
 
+/* Hero Content Layer */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #423b20;
+}
+
+/* Text */
 .hero-name {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 6vw, 4rem);
-  color: #423b20;
   margin: 0;
   animation: slideInLeft 1s ease forwards;
 }
@@ -45,11 +59,11 @@ body {
 .hero-subtext {
   font-family: var(--font-heading);
   font-size: clamp(1.5rem, 4vw, 2.5rem);
-  color: #423b20;
   margin-top: 0.5rem;
   animation: slideInRight 1s ease forwards;
 }
 
+/* Buttons */
 .hero-buttons {
   display: flex;
   gap: 20px;
@@ -72,12 +86,18 @@ body {
 }
 
 .hero-btn:hover {
-  background-color: #d29a34; 
-  transform: translateY(-3px); 
+  background-color: #d29a34;
+  transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(66, 59, 32, 0.2);
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 480px) {
+
+  .hero-content {
+    padding: 3rem 1rem;
+  }
+
   .hero-name {
     font-size: clamp(1.5rem, 8vw, 2.2rem);
   }
@@ -89,9 +109,5 @@ body {
   .hero-btn {
     width: 180px;
     height: 48px;
-    min-width: 180px;
-    max-width: 180px;
-    min-height: 48px;
-    max-height: 48px;
   }
 }
